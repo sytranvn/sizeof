@@ -8,7 +8,7 @@ int main() {
 
   printf("%ld %ld %ld %ld\n", sizeof(a1), sizeof(a2), sizeof(a3), sizeof(a4));
   printf("%ld %ld %ld %ld\n", sizeof(*a1), sizeof(**a2), sizeof(***a3),
-         sizeof(***a4));
+         sizeof(****a4));
 
   u_int32_t *b1;
   u_int32_t **b2;
@@ -17,7 +17,7 @@ int main() {
 
   printf("%ld %ld %ld %ld\n", sizeof(b1), sizeof(b2), sizeof(b3), sizeof(b4));
   printf("%ld %ld %ld %ld\n", sizeof(*b1), sizeof(**b2), sizeof(***b3),
-         sizeof(***b4));
+         sizeof(****b4));
 
   return 0;
 }
